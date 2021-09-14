@@ -1,8 +1,14 @@
-# tbs
-Code for paper: large-scale network emulation via topology balancing
+# Code for paper: large-scale network emulation via topology balancing
+## Build
+```
+mkdir build
+cd build
+cmake .. && make 
+```
 
-# Notice
+## Run
+```
+./tbs <topology file> --k=<number of parts> --preconfiguration=esocial
+```
+## Disclaimer
 Some codes here are developed upon [KaHIP](https://github.com/KaHIP/KaHIP)
-
-
-This is for experiment only, deployment version will be available in September.

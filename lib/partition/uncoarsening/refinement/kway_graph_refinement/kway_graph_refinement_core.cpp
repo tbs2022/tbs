@@ -64,7 +64,7 @@ EdgeWeight kway_graph_refinement_core::single_kway_refinement_round_internal(Par
         }
 
         init_queue_with_boundary(config, G, start_nodes, queue, moved_idx, boundary);
-        std::cout << "Queue size = " << queue->size() << std::endl;
+//        std::cout << "Queue size = " << queue->size() << std::endl;
         
         if(queue->empty()) {delete queue; return 0;}
 
@@ -178,7 +178,7 @@ accept_equal = false;
     //a new partition adj matrix every iteration
     partitionAdjMat mat(G.get_partition_count());
     mat.pairwise_cut(G);
-    std::cout << "max cut" << mat.getMax() << std::endl;
+//    std::cout << "max cut" << mat.getMax() << std::endl;
     delete queue;
     delete stopping_rule;
         return initial_cut - best_cut; 

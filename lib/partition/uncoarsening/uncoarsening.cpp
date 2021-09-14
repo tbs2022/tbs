@@ -74,9 +74,10 @@ int uncoarsening::perform_uncoarsening_cut(const PartitionConfig & config, graph
         while(!hierarchy.isEmpty()) {
                 graph_access* G = hierarchy.pop_finer_and_project();
 
-                PRINT(std::cout << "log>" << "unrolling graph with " << G->number_of_nodes()<<  std::endl;)
-                
-                if(!config.label_propagation_refinement) {
+//                PRINT(std::cout << "log>" << "unrolling graph with " << G->number_of_nodes()<<  std::endl;)
+            std::cout << "log>" << "unrolling graph with " << G->number_of_nodes()<<  std::endl;
+
+            if(!config.label_propagation_refinement) {
                         finer_boundary = new complete_boundary(G); 
                         finer_boundary->build_from_coarser(coarser_boundary, coarser_no_nodes, hierarchy.get_mapping_of_current_finer());
                 }

@@ -33,9 +33,9 @@ EdgeWeight kway_graph_refinement::perform_refinement(PartitionConfig & config, g
 
 //    for( unsigned i = 0; i < config.kway_rounds || sth_changed; i++) {
 ///////////////////////////////////////////////rounds
-    std::cout << "upper bound is >" << config.upper_bound_partition << std::endl;
+//    std::cout << "upper bound is >" << config.upper_bound_partition << std::endl;
     for( unsigned i = 0; i < 5 || sth_changed; i++) {
-            std::cout << i << "th loop to call single kway refinment" << std::endl;
+//            std::cout << i << "th loop to call single kway refinment" << std::endl;
                 EdgeWeight improvement = 0;    
 
                 boundary_starting_nodes start_nodes;
