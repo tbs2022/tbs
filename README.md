@@ -1,4 +1,4 @@
-# Code for paper: large-scale network emulation via topology balancing
+# Code for paper: Distributed Network Emulation using Topology Balancing
 ## Build
 ```
 mkdir build
