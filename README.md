@@ -12,11 +12,8 @@ cmake .. && make
 ```
 
 ## Convert to MaxiNet nodemapping
-Run
-```
-python convert.py
-```
-to generate a python dictionary object and pass as the argument of `nodemapping` on the creation of  `Experiment` object in MaxiNet.
+Run `python convert.py` after above to generate a python dictionary object.
+Pass the dictionary as the argument of `nodemapping` on the creation of  `Experiment` object in MaxiNet.
 
 ## Disclaimer
 Some codes here are developed upon [KaHIP](https://github.com/KaHIP/KaHIP)
